@@ -1,0 +1,19 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "baf1b22dd7ed52b3975de8abe3160b326b367a9c",
+  "iOS" : [
+    {
+      "name" : "ProgressImageView",
+      "hash" : "243f648cd01cc7d1e7531e496ecd8028dcd93b77eefa834d81cf783aefb56f11",
+      "swiftToolchainVersion" : "5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+framework module ProgressImageView {
+  umbrella header "ProgressImageView.h"
+
+  export *
+  module * { export * }
+}
+
+module ProgressImageView.Swift {
+    header "ProgressImageView-Swift.h"
+    requires objc
+}
