@@ -1,7 +1,7 @@
 language: swift  #1
 osx_image: xcode11 #2
 xcode_project: ProgressImageView.xcodeproj #3
-xcode_scheme: ProgressImageView #4
+xcode_scheme: ProgressImageViewTests #4
 #xcode_sdk: iphonesimulator13.0 #5
 script:
 - xcodebuild clean test -project ProgressImageView.xcodeproj -scheme ProgressImageView -destination "platform=iOS Simulator,name=iPhone 8,OS=13.0" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO -quiet

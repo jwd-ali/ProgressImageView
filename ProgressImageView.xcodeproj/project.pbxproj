@@ -18,6 +18,7 @@
 		E3DC021624176B3500AA28FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DC021524176B3500AA28FE /* SceneDelegate.swift */; };
 		E3DC021824176B4400AA28FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DC021724176B4400AA28FE /* ViewController.swift */; };
 		E3DC021B24176B8400AA28FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3DC021924176B8400AA28FE /* Main.storyboard */; };
+		E3DC021F2417A30000AA28FE /* ProgressImageView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DC01D124176A9300AA28FE /* ProgressImageView.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,13 @@
 			remoteInfo = ProgressImageView;
 		};
 		E3DC020724176AB800AA28FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E3DC01C824176A9300AA28FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E3DC01F024176AB600AA28FE;
+			remoteInfo = ProgressImageViewDemo;
+		};
+		E3DC021C24179A2100AA28FE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E3DC01C824176A9300AA28FE /* Project object */;
 			proxyType = 1;
@@ -78,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3DC021F2417A30000AA28FE /* ProgressImageView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +108,7 @@
 				E3DC01F224176AB600AA28FE /* ProgressImageViewDemo */,
 				E3DC020924176AB800AA28FE /* ProgressImageViewDemoTests */,
 				E3DC01D224176A9300AA28FE /* Products */,
+				E3DC021E2417A30000AA28FE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -155,6 +165,13 @@
 			path = ProgressImageViewDemoTests;
 			sourceTree = "<group>";
 		};
+		E3DC021E2417A30000AA28FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -199,6 +216,7 @@
 			);
 			dependencies = (
 				E3DC01DD24176A9300AA28FE /* PBXTargetDependency */,
+				E3DC021D24179A2100AA28FE /* PBXTargetDependency */,
 			);
 			name = ProgressImageViewTests;
 			productName = ProgressImageViewTests;
@@ -256,6 +274,7 @@
 					};
 					E3DC01D924176A9300AA28FE = {
 						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = E3DC01F024176AB600AA28FE;
 					};
 					E3DC01F024176AB600AA28FE = {
 						CreatedOnToolsVersion = 11.3.1;
@@ -369,6 +388,11 @@
 			target = E3DC01F024176AB600AA28FE /* ProgressImageViewDemo */;
 			targetProxy = E3DC020724176AB800AA28FE /* PBXContainerItemProxy */;
 		};
+		E3DC021D24179A2100AA28FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E3DC01F024176AB600AA28FE /* ProgressImageViewDemo */;
+			targetProxy = E3DC021C24179A2100AA28FE /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -442,7 +466,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -499,7 +523,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -522,6 +546,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = ProgressImageView/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -547,6 +572,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = ProgressImageView/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -564,6 +590,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ProgressImageViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -575,6 +602,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProgressImageViewDemo.app/ProgressImageViewDemo";
 			};
 			name = Debug;
 		};
@@ -582,6 +610,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ProgressImageViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -593,6 +622,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProgressImageViewDemo.app/ProgressImageViewDemo";
 			};
 			name = Release;
 		};
@@ -602,6 +632,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ProgressImageViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -619,6 +650,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ProgressImageViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
