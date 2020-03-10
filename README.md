@@ -122,3 +122,9 @@ progressView.animationDidFinish = {  print("Animation Completed")}
 ```
 
 Congratulations! You're done.
+
+
+License
+-------
+
+ProgessImageView is under [MIT](https://opensource.org/licenses/MIT). See [LICENSE](LICENSE) file for more info.
