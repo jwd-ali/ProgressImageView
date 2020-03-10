@@ -10,6 +10,14 @@
 		E3DC01DB24176A9300AA28FE /* ProgressImageView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DC01D124176A9300AA28FE /* ProgressImageView.framework */; };
 		E3DC01E024176A9300AA28FE /* ProgressImageViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DC01DF24176A9300AA28FE /* ProgressImageViewTests.swift */; };
 		E3DC01E224176A9300AA28FE /* ProgressImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = E3DC01D424176A9300AA28FE /* ProgressImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E3DC01EC24176A9E00AA28FE /* ProgessImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DC01EB24176A9E00AA28FE /* ProgessImageView.swift */; };
+		E3DC01FD24176AB800AA28FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3DC01FC24176AB800AA28FE /* Assets.xcassets */; };
+		E3DC020024176AB800AA28FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3DC01FE24176AB800AA28FE /* LaunchScreen.storyboard */; };
+		E3DC020B24176AB800AA28FE /* ProgressImageViewDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DC020A24176AB800AA28FE /* ProgressImageViewDemoTests.swift */; };
+		E3DC021424176B2900AA28FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DC021324176B2900AA28FE /* AppDelegate.swift */; };
+		E3DC021624176B3500AA28FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DC021524176B3500AA28FE /* SceneDelegate.swift */; };
+		E3DC021824176B4400AA28FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DC021724176B4400AA28FE /* ViewController.swift */; };
+		E3DC021B24176B8400AA28FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3DC021924176B8400AA28FE /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -20,6 +28,13 @@
 			remoteGlobalIDString = E3DC01D024176A9300AA28FE;
 			remoteInfo = ProgressImageView;
 		};
+		E3DC020724176AB800AA28FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E3DC01C824176A9300AA28FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E3DC01F024176AB600AA28FE;
+			remoteInfo = ProgressImageViewDemo;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +44,18 @@
 		E3DC01DA24176A9300AA28FE /* ProgressImageViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProgressImageViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3DC01DF24176A9300AA28FE /* ProgressImageViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressImageViewTests.swift; sourceTree = "<group>"; };
 		E3DC01E124176A9300AA28FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3DC01EB24176A9E00AA28FE /* ProgessImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgessImageView.swift; sourceTree = "<group>"; };
+		E3DC01F124176AB600AA28FE /* ProgressImageViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProgressImageViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3DC01FC24176AB800AA28FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E3DC01FF24176AB800AA28FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E3DC020124176AB800AA28FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3DC020624176AB800AA28FE /* ProgressImageViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProgressImageViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3DC020A24176AB800AA28FE /* ProgressImageViewDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressImageViewDemoTests.swift; sourceTree = "<group>"; };
+		E3DC020C24176AB800AA28FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3DC021324176B2900AA28FE /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E3DC021524176B3500AA28FE /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E3DC021724176B4400AA28FE /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E3DC021A24176B8400AA28FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +74,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E3DC01EE24176AB600AA28FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3DC020324176AB800AA28FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -55,6 +96,8 @@
 			children = (
 				E3DC01D324176A9300AA28FE /* ProgressImageView */,
 				E3DC01DE24176A9300AA28FE /* ProgressImageViewTests */,
+				E3DC01F224176AB600AA28FE /* ProgressImageViewDemo */,
+				E3DC020924176AB800AA28FE /* ProgressImageViewDemoTests */,
 				E3DC01D224176A9300AA28FE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,6 +107,8 @@
 			children = (
 				E3DC01D124176A9300AA28FE /* ProgressImageView.framework */,
 				E3DC01DA24176A9300AA28FE /* ProgressImageViewTests.xctest */,
+				E3DC01F124176AB600AA28FE /* ProgressImageViewDemo.app */,
+				E3DC020624176AB800AA28FE /* ProgressImageViewDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -72,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				E3DC01D424176A9300AA28FE /* ProgressImageView.h */,
+				E3DC01EB24176A9E00AA28FE /* ProgessImageView.swift */,
 				E3DC01D524176A9300AA28FE /* Info.plist */,
 			);
 			path = ProgressImageView;
@@ -84,6 +130,29 @@
 				E3DC01E124176A9300AA28FE /* Info.plist */,
 			);
 			path = ProgressImageViewTests;
+			sourceTree = "<group>";
+		};
+		E3DC01F224176AB600AA28FE /* ProgressImageViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				E3DC021324176B2900AA28FE /* AppDelegate.swift */,
+				E3DC021524176B3500AA28FE /* SceneDelegate.swift */,
+				E3DC021724176B4400AA28FE /* ViewController.swift */,
+				E3DC021924176B8400AA28FE /* Main.storyboard */,
+				E3DC01FC24176AB800AA28FE /* Assets.xcassets */,
+				E3DC01FE24176AB800AA28FE /* LaunchScreen.storyboard */,
+				E3DC020124176AB800AA28FE /* Info.plist */,
+			);
+			path = ProgressImageViewDemo;
+			sourceTree = "<group>";
+		};
+		E3DC020924176AB800AA28FE /* ProgressImageViewDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				E3DC020A24176AB800AA28FE /* ProgressImageViewDemoTests.swift */,
+				E3DC020C24176AB800AA28FE /* Info.plist */,
+			);
+			path = ProgressImageViewDemoTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +205,41 @@
 			productReference = E3DC01DA24176A9300AA28FE /* ProgressImageViewTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		E3DC01F024176AB600AA28FE /* ProgressImageViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3DC020D24176AB800AA28FE /* Build configuration list for PBXNativeTarget "ProgressImageViewDemo" */;
+			buildPhases = (
+				E3DC01ED24176AB600AA28FE /* Sources */,
+				E3DC01EE24176AB600AA28FE /* Frameworks */,
+				E3DC01EF24176AB600AA28FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ProgressImageViewDemo;
+			productName = ProgressImageViewDemo;
+			productReference = E3DC01F124176AB600AA28FE /* ProgressImageViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E3DC020524176AB800AA28FE /* ProgressImageViewDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3DC021024176AB800AA28FE /* Build configuration list for PBXNativeTarget "ProgressImageViewDemoTests" */;
+			buildPhases = (
+				E3DC020224176AB800AA28FE /* Sources */,
+				E3DC020324176AB800AA28FE /* Frameworks */,
+				E3DC020424176AB800AA28FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E3DC020824176AB800AA28FE /* PBXTargetDependency */,
+			);
+			name = ProgressImageViewDemoTests;
+			productName = ProgressImageViewDemoTests;
+			productReference = E3DC020624176AB800AA28FE /* ProgressImageViewDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -148,9 +252,17 @@
 				TargetAttributes = {
 					E3DC01D024176A9300AA28FE = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 					E3DC01D924176A9300AA28FE = {
 						CreatedOnToolsVersion = 11.3.1;
+					};
+					E3DC01F024176AB600AA28FE = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					E3DC020524176AB800AA28FE = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = E3DC01F024176AB600AA28FE;
 					};
 				};
 			};
@@ -169,6 +281,8 @@
 			targets = (
 				E3DC01D024176A9300AA28FE /* ProgressImageView */,
 				E3DC01D924176A9300AA28FE /* ProgressImageViewTests */,
+				E3DC01F024176AB600AA28FE /* ProgressImageViewDemo */,
+				E3DC020524176AB800AA28FE /* ProgressImageViewDemoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -188,6 +302,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E3DC01EF24176AB600AA28FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3DC021B24176B8400AA28FE /* Main.storyboard in Resources */,
+				E3DC020024176AB800AA28FE /* LaunchScreen.storyboard in Resources */,
+				E3DC01FD24176AB800AA28FE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3DC020424176AB800AA28FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -195,6 +326,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3DC01EC24176A9E00AA28FE /* ProgessImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,6 +338,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E3DC01ED24176AB600AA28FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3DC021424176B2900AA28FE /* AppDelegate.swift in Sources */,
+				E3DC021824176B4400AA28FE /* ViewController.swift in Sources */,
+				E3DC021624176B3500AA28FE /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3DC020224176AB800AA28FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3DC020B24176AB800AA28FE /* ProgressImageViewDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -214,7 +364,31 @@
 			target = E3DC01D024176A9300AA28FE /* ProgressImageView */;
 			targetProxy = E3DC01DC24176A9300AA28FE /* PBXContainerItemProxy */;
 		};
+		E3DC020824176AB800AA28FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E3DC01F024176AB600AA28FE /* ProgressImageViewDemo */;
+			targetProxy = E3DC020724176AB800AA28FE /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E3DC01FE24176AB800AA28FE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E3DC01FF24176AB800AA28FE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E3DC021924176B8400AA28FE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E3DC021A24176B8400AA28FE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		E3DC01E324176A9300AA28FE /* Debug */ = {
@@ -340,6 +514,7 @@
 		E3DC01E624176A9300AA28FE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -355,6 +530,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = XeroT.ProgressImageView;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -363,6 +539,7 @@
 		E3DC01E724176A9300AA28FE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -386,6 +563,7 @@
 		E3DC01E924176A9300AA28FE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ProgressImageViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -403,6 +581,7 @@
 		E3DC01EA24176A9300AA28FE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ProgressImageViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -414,6 +593,82 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E3DC020E24176AB800AA28FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ProgressImageViewDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = XeroT.ProgressImageViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E3DC020F24176AB800AA28FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ProgressImageViewDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = XeroT.ProgressImageViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E3DC021124176AB800AA28FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ProgressImageViewDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = XeroT.ProgressImageViewDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProgressImageViewDemo.app/ProgressImageViewDemo";
+			};
+			name = Debug;
+		};
+		E3DC021224176AB800AA28FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ProgressImageViewDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = XeroT.ProgressImageViewDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProgressImageViewDemo.app/ProgressImageViewDemo";
 			};
 			name = Release;
 		};
@@ -443,6 +698,24 @@
 			buildConfigurations = (
 				E3DC01E924176A9300AA28FE /* Debug */,
 				E3DC01EA24176A9300AA28FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3DC020D24176AB800AA28FE /* Build configuration list for PBXNativeTarget "ProgressImageViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3DC020E24176AB800AA28FE /* Debug */,
+				E3DC020F24176AB800AA28FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3DC021024176AB800AA28FE /* Build configuration list for PBXNativeTarget "ProgressImageViewDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3DC021124176AB800AA28FE /* Debug */,
+				E3DC021224176AB800AA28FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

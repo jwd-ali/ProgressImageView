@@ -16,10 +16,13 @@ open class ProgessImageView: UIView {
     public var animationDuration: Double = 1
     public var animated: Bool = false
     
-    /// Should be set to a value between 0.0 and 100.0
+    /// Should be set to a value between `0.0` and `100.0`
     public var progress = 0.0 { didSet { updateProgress(from: oldValue, to: progress )  } }
     
-    /// Layers image + progress Layer
+    /// Gets called each time the current progress change animation finishes
+    public var animationDidFinish: (() -> Void)?
+    
+    /// - Important: Lazily initialize Layers image + progress Layer
     
     private lazy var imageLayer : CALayer = {
         let imageLayer = CALayer()
@@ -43,9 +46,11 @@ open class ProgessImageView: UIView {
         
     }()
     
+    /// `Masking` layer
+    
     private lazy var maskingLayer = CAShapeLayer()
     
-    ///Initializers of the View
+    ///`Initializers` of the View
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -56,22 +61,22 @@ open class ProgessImageView: UIView {
         super.init(coder: coder)
         commonInit()
     }
-   
-    /* Custom initializer taking
-     *
-     * UIImage: To show in center
-     * UIColor: ProgressBar color
-     * Progress: Progress in Double between 0 - 100
-     * LineWidth: Width of the progress circle
-     * AnimationDuration: Animation Duration of the progress */
     
-    init(with image:UIImage?, color:UIColor, progress:Double, lineWidth:Double = 5 , animationDuration:Double = 1) {
+    ///  Custom initializer taking
+    
+    ///  * `UIImage`: To show in center
+    ///   * `UIColor `: ProgressBar color
+    ///   * `Progress` : Progress in Double between `0.0 - 100`
+    ///   * `LineWidth` : Width of the progress circle
+    ///   * `Animation` : Is animation On or Off*/
+    
+    public init(with image:UIImage?, color:UIColor, progress:Double, lineWidth:Double = 5 , animation:Bool = false) {
         super.init(frame:CGRect.zero)
         self.image = image
         self.progressColor = color
         self.lineWidth = CGFloat(lineWidth)
         self.progress = progress
-        self.animationDuration = animationDuration
+        self.animated = animation
         updateProgress(from: 0, to: progress)
         commonInit()
     }
@@ -91,14 +96,14 @@ extension ProgessImageView {
         layer.addSublayer(progressLayer)
     }
     
-    /// Update UIBezierPath according to bounds
+    /// Update `UIBezierPath` according to bounds
     
     private func updatePaths() {
         
         let radius: CGFloat = bounds.maxX / 2
         let center = CGPoint(x:bounds.midX,y:bounds.midY)
         
-        maskingLayer.path = UIBezierPath(arcCenter: center, radius: radius - lineWidth * 2 , startAngle: CGFloat(-90).deg2rad(), endAngle: CGFloat(270).deg2rad(), clockwise: true).cgPath
+        maskingLayer.path = UIBezierPath(arcCenter: center, radius: radius - lineWidth * 2.5 , startAngle: CGFloat(-90).deg2rad(), endAngle: CGFloat(270).deg2rad(), clockwise: true).cgPath
         
         progressLayer.path = UIBezierPath(arcCenter: center, radius: radius - lineWidth/2 , startAngle: CGFloat(-90).deg2rad(), endAngle: CGFloat(270).deg2rad(), clockwise: true).cgPath
         
@@ -114,7 +119,7 @@ extension ProgessImageView {
         updatePaths()
     }
     
-    /// Update Progress
+    /// `Update Progress`
     
     private func updateProgress(from oldValue: Double, to newValue: Double) {
         
@@ -128,20 +133,31 @@ extension ProgessImageView {
             animation.duration = animationDuration
             animation.fillMode = CAMediaTimingFillMode.forwards
             animation.isRemovedOnCompletion = false
+            animation.delegate = self
             
             progressLayer.removeAnimation(forKey: StrokePosition.strokeEnd.rawValue)
             progressLayer.add(animation, forKey: StrokePosition.strokeEnd.rawValue)
+            
         } else {
+            
             progressLayer.strokeEnd = CGFloat(progress / 100)
         }
-     
+        
     }
 }
+
+extension ProgessImageView: CAAnimationDelegate {
+    
+    public func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
+        animationDidFinish?()
+    }
+}
+
 
 public enum StrokePosition: String {
     case strokeStart, strokeEnd
 }
-/// Degree to Radians Conversion
+/// `Degree to Radians` Conversion
 public extension CGFloat {
     func deg2rad() -> CGFloat {
         return self * .pi / 180

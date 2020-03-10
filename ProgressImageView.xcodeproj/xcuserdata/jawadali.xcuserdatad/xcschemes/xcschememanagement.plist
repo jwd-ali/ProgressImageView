@@ -9,6 +9,34 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>ProgressImageViewDemo.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>E3DC01D024176A9300AA28FE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E3DC01D924176A9300AA28FE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E3DC01F024176AB600AA28FE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E3DC020524176AB800AA28FE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 	</dict>
 </dict>
 </plist>
