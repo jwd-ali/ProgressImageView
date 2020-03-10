@@ -95,7 +95,7 @@ If you prefer not to use a dependency manager, you can integrate ProgessImageVie
 
 > And for Manuall install you dont need to import anything 
 
-- Init your ring with  `percentages` and `colors`:
+- Init your ProgressView with  `image` and `color` of progress:
 ```swift
  let progressView = ProgessImageView(with: UIImage(named: "cup"), color: #colorLiteral(red: 0.4433879256, green: 0.2915558219, blue: 0.8948832154, alpha: 1), progress: 30 , animation: true)
  
