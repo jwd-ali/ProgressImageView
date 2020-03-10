@@ -10,6 +10,8 @@ import UIKit
 
 open class ProgessImageView: UIView {
     
+    /// `Public` Properties
+    
     public var progressColor: UIColor = .green { didSet { updateValues() } }
     public var lineWidth: CGFloat = 5 { didSet { updateValues() } }
     public var image: UIImage? = nil {didSet {imageLayer.contents = image?.cgImage}}
