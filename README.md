@@ -125,7 +125,7 @@ Congratulations! You're done.
 
 ## Contributing
 
-I’d love to have help on this project. For small changes please [open a pull request](https://github.com/douglashill/ProgressImageView/pulls), for larger changes please [open an issue](https://github.com/douglashill/ProgressImageView/issues) first to discuss what you’d like to see.
+I’d love to have help on this project. For small changes please [open a pull request](https://github.com/jwd-ali/ProgressImageView/pulls), for larger changes please [open an issue](https://github.com/jwd-ali/ProgressImageView/issues) first to discuss what you’d like to see.
 
 License
 -------
